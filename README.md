@@ -61,7 +61,7 @@ client.loginBot("..");
     `npm i -D @insertish/oapi`  
     `npx tsc bot.ts  --lib ES6 --lib DOM --esModuleInterop --module ES6`  
     `npx tsc --showConfig`  
-    `npx tsc bot.ts  --lib ES6 --lib DOM --esModuleInterop --module ES6 --moduleResolution node --showConfig`
+    `npx tsc bot.ts  --lib ES6 --lib DOM --esModuleInterop --module ES6 --moduleResolution node --target ES6 --showConfig`
     Current issue: https://github.com/revoltchat/revolt.js/issues/57  
 
 11. Rehosting onto Linux Platform.  
