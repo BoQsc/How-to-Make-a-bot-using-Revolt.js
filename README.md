@@ -71,3 +71,11 @@ client.loginBot("..");
     ```
     kill -9 `cat run.pid`
     ```
+
+
+Useful Linux Commands:
+
+```
+ps
+killall node
+```
