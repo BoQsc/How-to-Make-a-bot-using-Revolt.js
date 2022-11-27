@@ -62,6 +62,7 @@ client.loginBot("..");
     `npx tsc bot.ts  --lib ES6 --lib DOM --esModuleInterop --module ES6`  
     `npx tsc --showConfig`  
     `npx tsc bot.ts  --lib ES6 --lib DOM --esModuleInterop --module ES6 --moduleResolution node --target ES6 --showConfig`  
+    `npx tsc bot.ts --esModuleInterop --module ES6 --moduleResolution node --target ES6 --experimentalDecorators --strict --showConfig`  
     https://github.com/debertjamie/revolt-bot-template/blob/master/tsconfig.json  
     Current issue: https://github.com/revoltchat/revolt.js/issues/57    
 
