@@ -3,6 +3,9 @@
 
 
 1. Download [Node JS Binary](https://nodejs.org/en/download/current/)
+1. Reinstall NPM to avoid bug where **.\node_modules\npm** folder being deleted after first use.   
+    `npm install -D npm`
+
 2. Install [revolt.js](https://www.npmjs.com/package/revolt.js)
    * `npm i revolt.js`
    
