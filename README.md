@@ -65,5 +65,9 @@ client.loginBot("..");
 12. Make the bot stay after disconnecting from Linux Machine: 
     ```
     nohup node --experimental-specifier-resolution=node bot.js > /dev/null 2>&1 & echo $! > run.pid
+    ```
+    
+13. Stop the bot if needed.
+    ```
     kill -9 `cat run.pid`
     ```
