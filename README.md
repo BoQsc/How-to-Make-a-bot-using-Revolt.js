@@ -56,6 +56,7 @@ client.loginBot("..");
     `npm i -D typescript`  
     `npm i revolt-api`  
     `npm i -D @types/node`  
+    `npm i axios`
     `npx tsc bot.ts  --lib ES6 --lib DOM`
 
 11. Rehosting onto Linux Platform.  
