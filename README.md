@@ -58,7 +58,8 @@ client.loginBot("..");
     `npm i -D @types/node`  
     `npm i -D @types/ws`  
     `npm i axios`  
-    `npx tsc bot.ts  --lib ES6 --lib DOM`
+    `npm i -D @insertish/oapi`
+    `npx tsc bot.ts  --lib ES6 --lib DOM --esModuleInterop`
 
 11. Rehosting onto Linux Platform.  
 ![image](https://user-images.githubusercontent.com/21064622/204130953-19d5572d-988b-456c-b38a-7ae806b1dfd5.png)  
