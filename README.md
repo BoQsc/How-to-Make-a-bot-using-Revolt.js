@@ -54,6 +54,7 @@ client.loginBot("..");
 11. Enabling TypeScript   
     *This part of article is incomplete and needs help.*  
     `npm i -D typescript`  
+    `npm i revolt-api`  
     `npx tsc typescriptexample.ts`  
 
 11. Rehosting onto Linux Platform.  
