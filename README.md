@@ -34,6 +34,10 @@ client.loginBot("..");
 
 7. Start your bot with `node --experimental-specifier-resolution=node yourbotfilename.js`
 
+8. Invite the bot into your server using Copy Invite Link button.  
+![image](https://user-images.githubusercontent.com/21064622/204128158-c254b43d-bab6-47a1-b4c8-11918e50813c.png)
+
+
 ---
 
 8. Edit the bot in the My Bots: Change profile picture and Description.  
