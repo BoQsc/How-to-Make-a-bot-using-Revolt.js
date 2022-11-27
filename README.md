@@ -50,4 +50,8 @@ client.loginBot("..");
 ![image](https://user-images.githubusercontent.com/21064622/204127696-9b59e728-abce-4794-a192-541ef21b79f8.png)
 
 ---
+
+11. Enabling TypeScript
+    `npm i -D typescript`
+
 11. Rehosting onto Linux Platform.
