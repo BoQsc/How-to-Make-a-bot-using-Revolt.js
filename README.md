@@ -1,4 +1,5 @@
 # Make-a-bot-in-Revolt.js
+![image](https://user-images.githubusercontent.com/21064622/204128095-ec382518-2d90-403b-a5ba-cbf7dca6ffeb.png)
 
 
 1. Download [Node JS Binary](https://nodejs.org/en/download/current/)
