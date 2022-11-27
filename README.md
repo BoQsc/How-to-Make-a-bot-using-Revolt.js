@@ -56,7 +56,8 @@ client.loginBot("..");
     `npm i -D typescript`  
     `npx tsc typescriptexample.ts`  
 
-11. Rehosting onto Linux Platform.
+11. Rehosting onto Linux Platform.  
+![image](https://user-images.githubusercontent.com/21064622/204130953-19d5572d-988b-456c-b38a-7ae806b1dfd5.png)  
     1. `apt install nodejs npm -y`  
     2. Install [revolt.js](https://www.npmjs.com/package/revolt.js)
         * `npm i revolt.js`
