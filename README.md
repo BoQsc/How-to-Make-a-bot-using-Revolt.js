@@ -51,8 +51,8 @@ client.loginBot("..");
 
 ---
 
-11. Enabling TypeScript  
-    *This part of article is incomplete and needs help.*
+11. Enabling TypeScript   
+    *This part of article is incomplete and needs help.*  
     `npm i -D typescript`  
     `npx tsc typescriptexample.ts`  
 
