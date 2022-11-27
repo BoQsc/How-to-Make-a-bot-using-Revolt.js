@@ -44,3 +44,6 @@ client.loginBot("..");
 10. Edit the bot in the **My Bots**:  
     Change profile picture and Description.  
 ![image](https://user-images.githubusercontent.com/21064622/204127696-9b59e728-abce-4794-a192-541ef21b79f8.png)
+
+---
+Rehosting onto Linux Platform.
