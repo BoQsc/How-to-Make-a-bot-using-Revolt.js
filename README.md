@@ -55,7 +55,8 @@ client.loginBot("..");
     *This part of article is incomplete and needs help.*  
     `npm i -D typescript`  
     `npm i revolt-api`  
-    `npx tsc typescriptexample.ts`  
+    `npm i -D @types/node`  
+    `npx tsc bot.ts  --lib ES6 --lib DOM`
 
 11. Rehosting onto Linux Platform.  
 ![image](https://user-images.githubusercontent.com/21064622/204130953-19d5572d-988b-456c-b38a-7ae806b1dfd5.png)  
