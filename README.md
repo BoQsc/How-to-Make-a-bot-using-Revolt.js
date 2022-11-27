@@ -62,6 +62,7 @@ client.loginBot("..");
     2. Install [revolt.js](https://www.npmjs.com/package/revolt.js)
         * `npm i revolt.js`
     3. `node --experimental-specifier-resolution=node yourbotfilename.js`
-12. Make the bot stay after disconnecting from Linux Machine:  
-      `npm install -g pm2`
-
+12. Make the bot stay after disconnecting from Linux Machine: 
+    ```
+    nohup node --experimental-specifier-resolution=node bot.js > /dev/null 2>&1 & echo $! > run.pid
+    ```
