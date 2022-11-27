@@ -58,8 +58,9 @@ client.loginBot("..");
     `npm i -D @types/node`  
     `npm i -D @types/ws`  
     `npm i axios`  
-    `npm i -D @insertish/oapi`
-    `npx tsc bot.ts  --lib ES6 --lib DOM --esModuleInterop`
+    `npm i -D @insertish/oapi`  
+    `npx tsc bot.ts  --lib ES6 --lib DOM --esModuleInterop`  
+    Current issue: https://github.com/revoltchat/revolt.js/issues/57  
 
 11. Rehosting onto Linux Platform.  
 ![image](https://user-images.githubusercontent.com/21064622/204130953-19d5572d-988b-456c-b38a-7ae806b1dfd5.png)  
