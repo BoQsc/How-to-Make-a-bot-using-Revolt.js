@@ -57,3 +57,9 @@ client.loginBot("..");
     `npx tsc typescriptexample.ts`  
 
 11. Rehosting onto Linux Platform.
+    1. `apt install nodejs npm -y`  
+    2. Install [revolt.js](https://www.npmjs.com/package/revolt.js)
+        * `npm i revolt.js`
+    3. `node --experimental-specifier-resolution=node yourbotfilename.js`
+    
+
