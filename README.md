@@ -3,8 +3,7 @@
 
 
 1. Download [Node JS Binary](https://nodejs.org/en/download/current/)
-1. Reinstall NPM to avoid bug where **.\node_modules\npm** folder being deleted after first use.   
-    [More information](https://stackoverflow.com/a/71853469/3789797)  
+1. Reinstall NPM to avoid bug where **.\node_modules\npm** folder being deleted after first use. [More information](https://stackoverflow.com/a/71853469/3789797)   
     `npm install -D npm`  
 
 
