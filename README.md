@@ -6,7 +6,7 @@
 2. Install [revolt.js](https://www.npmjs.com/package/revolt.js)
    * `npm i revolt.js`
    
-3. Go to Revolt and open  My Bots  
+3. Go to Revolt and open **My Bots**  
 ![image](https://user-images.githubusercontent.com/21064622/204127696-9b59e728-abce-4794-a192-541ef21b79f8.png)
 
 4. Add Bot
@@ -34,11 +34,11 @@ client.loginBot("..");
 
 7. Start your bot with `node --experimental-specifier-resolution=node yourbotfilename.js`
 
-8. Invite the bot into your server using Copy Invite Link button.  
+8. Invite the bot into your server using Copy Invite Link button from **My Bots** Tab.  
 ![image](https://user-images.githubusercontent.com/21064622/204128158-c254b43d-bab6-47a1-b4c8-11918e50813c.png)
 
 
 ---
 
-8. Edit the bot in the My Bots: Change profile picture and Description.  
+8. Edit the bot in the **My Bots**: Change profile picture and Description.  
 ![image](https://user-images.githubusercontent.com/21064622/204127696-9b59e728-abce-4794-a192-541ef21b79f8.png)
