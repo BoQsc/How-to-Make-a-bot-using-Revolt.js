@@ -52,7 +52,7 @@ client.loginBot("..");
 ---
 
 11. Enabling TypeScript  
-    `npm i -D typescript`
-    `npx tsc typescriptexample.ts`
+    `npm i -D typescript`  
+    `npx tsc typescriptexample.ts`  
 
 11. Rehosting onto Linux Platform.
