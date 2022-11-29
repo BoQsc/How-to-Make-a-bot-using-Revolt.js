@@ -27,7 +27,7 @@ client.on("ready", async () => {
 		let server_count_index = 0;
 		console.info("Joined Servers:");
 		console.info(`debuginfo:  ${client.servers.forEach(
-		(values, keys, objects) => {
+		async (values, keys, objects) => {
 			console.info(++server_count_index + " " + values._id + " " + values.name);
 			console.info("  Joined at: " + values.member.joined_at);
 			console.info("  Roles: " + values.member.roles);
@@ -36,7 +36,19 @@ client.on("ready", async () => {
 			console.info("  roleColour: " + values.member.roleColour);
 			console.info("  orderedRoles: " + values.member.orderedRoles);
 			console.info("  orderedRoles: " + typeof values.member.orderedRoles);
+			
 
+			await values.member.edit({
+				nickname: "Guild Bot V0.2"
+				
+			});
+			
+			await values.member.edit({
+				nickname: "Guild Bot V0.1"
+				
+			});
+			
+			
 			for (const [key, value] of Object.entries(values.member.orderedRoles)) {
 			  console.log(`    ${key}: ${value}`);
 				for (const [keyz, valuez] of Object.entries(value)) {
