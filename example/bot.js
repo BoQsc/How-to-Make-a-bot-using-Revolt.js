@@ -38,7 +38,11 @@ client.on("ready", async () => {
 			console.info("  orderedRoles: " + typeof values.member.orderedRoles);
 
 			for (const [key, value] of Object.entries(values.member.orderedRoles)) {
-			  console.log(`${key}: ${value}`);
+			  console.log(`    ${key}: ${value}`);
+				for (const [keyz, valuez] of Object.entries(value)) {
+					console.log(`      ${keyz}: ${valuez}`);
+					console.log(`      ${valuez.name}`);
+				}
 			}
 			
 		}
