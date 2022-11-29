@@ -41,7 +41,13 @@ client.on("ready", async () => {
 			  console.log(`    ${key}: ${value}`);
 				for (const [keyz, valuez] of Object.entries(value)) {
 					console.log(`      ${keyz}: ${valuez}`);
-					console.log(`      ${valuez.name}`);
+					if (keyz == 1) {
+						console.log(`          Name: ${valuez.name}`);
+						console.log(`          Colour: ${valuez.colour}`);
+						console.log(`          Hoist: ${valuez.hoist}`);
+						console.log(`          Permissions: ${valuez.permissions}`);
+						console.log(`          Rank: ${valuez.rank}`);
+					}
 				}
 			}
 			
