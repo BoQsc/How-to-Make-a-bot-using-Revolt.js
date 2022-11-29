@@ -24,6 +24,14 @@ client.on("ready", async () => {
 		console.info(`Servers joined:  ${client.servers.size}!`);
 		console.info(`Get server by ID:  ${client.servers.get("01GJ0CVB1ZV2H1YA13S6ZK4N4N").name}!`);
 		
+		console.info(`Servers owning:  ${client.servers.forEach(
+		(values, keys, objects) => {
+			console.info("Servers:");
+			console.info(" " + values._id);
+			
+		}
+		
+		)}!`);
 		/*console.info(`Servers owning:  ${client.servers.forEach(client.servers)}!`);*/
 		
 		/* console.dir(client.servers.data_, { depth:1 }) */
