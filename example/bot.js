@@ -28,7 +28,7 @@ client.on("ready", async () => {
 		console.info(`Servers owning:  ${client.servers.forEach(
 		(values, keys, objects) => {
 
-			console.info(" " + values._id);
+			console.info(" " + values._id + " " + values.name);
 			
 		}
 		
