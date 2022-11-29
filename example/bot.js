@@ -24,11 +24,11 @@ client.on("ready", async () => {
 		console.info(`Servers joined:  ${client.servers.size}!`);
 		console.info(`Get server by ID:  ${client.servers.get("01GJ0CVB1ZV2H1YA13S6ZK4N4N").name}!`);
 		
-		console.info("Servers:");
+		let server_count_index = 0;
+		console.info("Joined Servers:");
 		console.info(`debuginfo:  ${client.servers.forEach(
 		(values, keys, objects) => {
-
-			console.info(" " + values._id + " " + values.name);
+			console.info(++server_count_index + " " + values._id + " " + values.name);
 			
 		}
 		
