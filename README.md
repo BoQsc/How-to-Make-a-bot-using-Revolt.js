@@ -16,7 +16,7 @@
 4. Add Bot
 5. Copy Token 
 6. Use CommonJS example.  
-**yourbotfilename.js**
+**bot.js**
 ```
 const { Client } = require("revolt.js");
 
@@ -51,7 +51,7 @@ client.loginBot("..");
 
 7. Insert your Token into `client.loginBot("..");`
 
-8. Start your bot with `node --experimental-specifier-resolution=node yourbotfilename.js`
+8. Start your bot with `node --experimental-specifier-resolution=node bot.js`
 
 9. Invite the bot into your server using Copy Invite Link button from **My Bots** Tab.  
 ![image](https://user-images.githubusercontent.com/21064622/204128158-c254b43d-bab6-47a1-b4c8-11918e50813c.png)
@@ -85,7 +85,7 @@ client.loginBot("..");
     1. `apt install nodejs npm -y`  
     2. Install [revolt.js](https://www.npmjs.com/package/revolt.js)
         * `npm i revolt.js`
-    3. `node --experimental-specifier-resolution=node yourbotfilename.js`
+    3. `node --experimental-specifier-resolution=node bot.js`
 12. Make the bot stay after disconnecting from Linux Machine: 
     ```
     nohup node --experimental-specifier-resolution=node bot.js > /dev/null 2>&1 & echo $! > run.pid
