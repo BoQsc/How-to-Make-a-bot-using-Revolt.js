@@ -43,12 +43,13 @@ client.on("ready", async () => {
 				nickname: "Guild Bot V0.1"
 				
 			});
-			/*
+			
+			/* 403  - Forbidden, the role is the same or higher than current one.*/
 			await values.member.edit({
-				roles: ["01GJ5MY14DJB867D7158HYAKZD", "01GJWB0CYDB8BR2AZE7NTT5TYP"]
+				roles: ["01GJWB0CYDB8BR2AZE7NTT5TYP", "01GJ5MY14DJB867D7158HYAKZD", "01GJ5Q8X6VNW4PDGR88NYJY1DR"]
 				
 			});
-*/
+
 			
 			
 			for (const [key, value] of Object.entries(values.member.orderedRoles)) {
