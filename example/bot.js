@@ -31,6 +31,15 @@ client.on("ready", async () => {
 			console.info(++server_count_index + " " + values._id + " " + values.name);
 			console.info("  Joined at: " + values.member.joined_at);
 			console.info("  Roles: " + values.member.roles);
+			console.info("  Nickname: " + values.member.nickname);
+			console.info("  Ranking: " + values.member.ranking);
+			console.info("  roleColour: " + values.member.roleColour);
+			console.info("  orderedRoles: " + values.member.orderedRoles);
+			console.info("  orderedRoles: " + typeof values.member.orderedRoles);
+
+			for (const [key, value] of Object.entries(values.member.orderedRoles)) {
+			  console.log(`${key}: ${value}`);
+			}
 			
 		}
 		
