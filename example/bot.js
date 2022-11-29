@@ -11,12 +11,12 @@ client.on("ready", async () => {
 		console.info(`User ID: ${client.user._id}!`);
 		console.info(`Logged in as ${client.user.username}!`);
 		console.info(`Bot online: ${client.user.online}!`);
-        client.users.edit({
-            status: {
-                text: "Listening to you.",
-                presence: "Idle",
-            },
-        });
+		client.users.edit({
+			status: {
+				text: "Listening to you.",
+				presence: "Idle",
+			},
+		});
 		console.info(`Bot owner ${client.user.bot.owner}!`); 
 		console.info(`Created at ${client.user.createdAt}!`);
 		console.info(`Presence: ${client.user.status.presence}!`);
@@ -43,9 +43,9 @@ client.on("ready", async () => {
 );
 
 client.on("message", async (message) => {
-    if (message.content === "hello") {
-        message.channel.sendMessage("world");
-    }
+	if (message.content === "hello") {
+		message.channel.sendMessage("world");
+	}
 });
 
 client.loginBot("..");
