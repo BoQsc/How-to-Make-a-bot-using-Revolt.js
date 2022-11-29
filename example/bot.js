@@ -38,15 +38,17 @@ client.on("ready", async () => {
 			console.info("  orderedRoles: " + typeof values.member.orderedRoles);
 			
 
-			await values.member.edit({
-				nickname: "Guild Bot V0.2"
-				
-			});
 			
 			await values.member.edit({
 				nickname: "Guild Bot V0.1"
 				
 			});
+			/*
+			await values.member.edit({
+				roles: ["01GJ5MY14DJB867D7158HYAKZD", "01GJWB0CYDB8BR2AZE7NTT5TYP"]
+				
+			});
+*/
 			
 			
 			for (const [key, value] of Object.entries(values.member.orderedRoles)) {
