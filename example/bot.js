@@ -29,6 +29,8 @@ client.on("ready", async () => {
 		console.info(`debuginfo:  ${client.servers.forEach(
 		(values, keys, objects) => {
 			console.info(++server_count_index + " " + values._id + " " + values.name);
+			console.info("  Joined at: " + values.member.joined_at);
+			console.info("  Roles: " + values.member.roles);
 			
 		}
 		
