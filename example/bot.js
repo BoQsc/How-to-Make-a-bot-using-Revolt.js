@@ -38,11 +38,14 @@ client.on("ready", async () => {
 			console.info("  orderedRoles: " + typeof values.member.orderedRoles);
 			
 
-			
+
 			await values.member.edit({
 				nickname: "Guild Bot V0.1"
 				
 			});
+			
+			
+			
 			
 			/* 403  - Forbidden, the role is the same or higher than current one.*/
 			await values.member.edit({
