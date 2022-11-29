@@ -25,7 +25,7 @@ client.on("ready", async () => {
 		console.info(`Get server by ID:  ${client.servers.get("01GJ0CVB1ZV2H1YA13S6ZK4N4N").name}!`);
 		
 		console.info("Servers:");
-		console.info(`Servers owning:  ${client.servers.forEach(
+		console.info(`debuginfo:  ${client.servers.forEach(
 		(values, keys, objects) => {
 
 			console.info(" " + values._id + " " + values.name);
