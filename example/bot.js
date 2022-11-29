@@ -33,7 +33,6 @@ client.on("ready", async () => {
 		}
 		
 		)}!`);
-		/*console.info(`Servers owning:  ${client.servers.forEach(client.servers)}!`);*/
 		
 		/* console.dir(client.servers.data_, { depth:1 }) */
 		/* console.dir(client.servers, { depth:1 }) */
