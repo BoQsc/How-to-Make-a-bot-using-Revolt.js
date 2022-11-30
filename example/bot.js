@@ -108,4 +108,9 @@ client.on("message", async (message) => {
 	}
 });
 
-client.loginBot("..");
+
+/* Read bot token from file */
+var fs = require('fs');
+var content = fs.readFileSync('token.txt','utf8');
+
+client.loginBot(content);
