@@ -110,6 +110,6 @@ client.on("message", async (message) => {
 
 /* Read bot token from file */
 var fs = require('fs');
-var content = fs.readFileSync('token.txt','utf8');
+var content = fs.readFileSync('./token.txt','utf8');
 
 client.loginBot(content);
