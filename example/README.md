@@ -14,15 +14,15 @@ Use `CTRL + C` to close bot.
 
 ### Additional
 
-Make the bot stay after disconnecting from Linux Machine:
-```bash
-nohup node "--experimental-specifier-resolution=node" "./bot.js" > /dev/null 2>&1 & echo $! > run.pid
-```
+1. Make the bot stay after disconnecting from Linux Machine:
+   ```bash
+   nohup node "--experimental-specifier-resolution=node" "./bot.js" > /dev/null 2>&1 & echo $! > run.pid
+   ```
 
-Stop the bot if needed.
-```bash
-kill -9 `cat run.pid`
-```
+2. Stop the bot if needed.
+   ```bash
+   kill -9 `cat run.pid`
+   ```
 
 Useful Linux Commands:
 ```bash
