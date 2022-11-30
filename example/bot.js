@@ -18,7 +18,7 @@ client.on("packet", async (event) => {
 		console.log(`emoji_id       ${event.emoji_id}`);
 		
 	}
-	/*
+	/* Display content of the packet event object.
 	for (const [keyd, valued] of Object.entries(event)) {
 		 console.log(`    ${keyd}: ${valued}`); 
 		
@@ -108,4 +108,4 @@ client.on("message", async (message) => {
 	}
 });
 
-client.loginBot("q8OO3w2eo3W5_FLxD0q25JgHQly1yS9fiBibyvpZbHeknh1WADCxhFLEVtrBbNR5");
+client.loginBot("..");
