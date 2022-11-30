@@ -48,8 +48,7 @@ client.on("ready", async () => {
 		
 		let server_count_index = 0;
 		console.info("Joined Servers:");
-		client.servers.forEach(
-			async (values, keys, objects) => {
+		client.servers.forEach(async (values, keys, objects) => {
 				console.info(++server_count_index + " " + values._id + " " + values.name);
 				console.info("  Joined at: " + values.member.joined_at);
 				console.info("  Roles: " + values.member.roles);
