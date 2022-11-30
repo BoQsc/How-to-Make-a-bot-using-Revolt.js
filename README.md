@@ -1,3 +1,7 @@
+<meta name="description" content="The quick brown fox jumped over the lazy dog.">
+<meta name="author" content="John Smith">
+
+
 # Make-a-bot-in-Revolt.js
 ![image](https://user-images.githubusercontent.com/21064622/204128095-ec382518-2d90-403b-a5ba-cbf7dca6ffeb.png)
 
