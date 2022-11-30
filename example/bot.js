@@ -29,7 +29,7 @@ client.on("packet", async (event) => {
 client.on("member/join", async (event) => {
 	console.log(`${event.user.username} joined the server.`);	
 	
-	/* Auto assign a role on join. Uses Role ID.*/
+	/* Auto assign a role on join. Uses Role ID that exists in the server.*/
 	await event.edit({
 			roles: ["01GK4740WMXDK04HXYY9KEP022"]
 		});
