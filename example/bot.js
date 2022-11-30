@@ -6,21 +6,24 @@ console.info(`Welcome to a Basic Revolt Bot.`);
 console.info(`Revolt Library version: ${require("revolt.js").LIBRARY_VERSION}!`);
 console.info(`_______________________________`);
 
-client.on("packet", async (events) => {
-	/* console.info(`event happened ${events}`); */ 
+client.on("packet", async (event) => {
+	/* console.info(`event happened ${event}`); */ 
 	
-	for (const [keyd, valued] of Object.entries(events)) {
-		/* console.log(`    ${keyd}: ${valued}`); */
-		
-		if (valued == "MessageReact" || valued == "MessageUnreact"){
+	if (event.type == "MessageReact" || event.type == "MessageUnreact"){
 
-			console.log(`type           ${events.type}`);
-			console.log(`id             ${events.id}`);
-			console.log(`channel_id     ${events.channel_id}`);
-			console.log(`user_id        ${events.user_id}`);
-			console.log(`emoji_id       ${events.emoji_id}`);
-		}
+		console.log(`type           ${event.type}`);
+		console.log(`id             ${event.id}`);
+		console.log(`channel_id     ${event.channel_id}`);
+		console.log(`user_id        ${event.user_id}`);
+		console.log(`emoji_id       ${event.emoji_id}`);
+		
 	}
+	/*
+	for (const [keyd, valued] of Object.entries(event)) {
+		 console.log(`    ${keyd}: ${valued}`); 
+		
+	}
+	*/
 })
 
 
@@ -105,4 +108,4 @@ client.on("message", async (message) => {
 	}
 });
 
-client.loginBot("..");
+client.loginBot("q8OO3w2eo3W5_FLxD0q25JgHQly1yS9fiBibyvpZbHeknh1WADCxhFLEVtrBbNR5");
