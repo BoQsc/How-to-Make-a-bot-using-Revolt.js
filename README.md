@@ -30,9 +30,6 @@ client.on("ready", async () => {
 	console.info(`Logged in as ${client.user.username}!`);
 	console.info(`Bot online: ${client.user.online}!`);
 	
-	client.user.bot.status = {
-		text: "Listening to you."
-	};
 	client.users.edit({
 		status: {
 			text: "Listening to you.",
