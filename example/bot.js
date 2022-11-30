@@ -26,8 +26,8 @@ client.on("packet", async (event) => {
 	*/
 })
 
-client.on("member/join", async (eventt) => {
-	console.log(`${eventt.user.username} joined the server.`);	
+client.on("member/join", async (event) => {
+	console.log(`${event.user.username} joined the server.`);	
 	}
 )
 
