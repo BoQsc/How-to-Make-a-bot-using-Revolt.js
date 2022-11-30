@@ -26,23 +26,22 @@ const { Client } = require("revolt.js");
 let client = new Client();
 
 client.on("ready", async () => {
-		console.info(`User ID: ${client.user._id}!`);
-		console.info(`Logged in as ${client.user.username}!`);
-		console.info(`Bot online: ${client.user.online}!`);
-		
-		client.user.bot.status = {
-			text: "Listening to you."
-		};
-		client.users.edit({
-			status: {
-				text: "Listening to you.",
-				presence: "Idle",
-			},
-		});
-		
-		console.info(`Logged in as ${client.user.bot.status}!`);
-	}
-);
+	console.info(`User ID: ${client.user._id}!`);
+	console.info(`Logged in as ${client.user.username}!`);
+	console.info(`Bot online: ${client.user.online}!`);
+	
+	client.user.bot.status = {
+		text: "Listening to you."
+	};
+	client.users.edit({
+		status: {
+			text: "Listening to you.",
+			presence: "Idle",
+		},
+	});
+	
+	console.info(`Logged in as ${client.user.bot.status}!`);
+});
 
 client.on("message", async (message) => {
 	if (message.content === "hello") {
