@@ -1,5 +1,5 @@
 ### Basic 
-Insert [Revolt Bot Token](https://app.revolt.chat/settings/bots) into `token.txt`
+Insert [Revolt Bot Token](https://app.revolt.chat/settings/bots) into [`./token.txt`](./token.txt)
 
 Start bot 
 ```
