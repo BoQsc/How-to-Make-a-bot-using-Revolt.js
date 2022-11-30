@@ -12,7 +12,7 @@ client.on("packet", async (event) => {
 	if (event.type == "MessageReact" || event.type == "MessageUnreact"){
 
 		console.log(`type           ${event.type}`);
-		console.log(`id             ${event.id}`);
+		console.log(`message id     ${event.id}`);
 		console.log(`channel_id     ${event.channel_id}`);
 		console.log(`user_id        ${event.user_id}`);
 		console.log(`emoji_id       ${event.emoji_id}`);
