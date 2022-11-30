@@ -18,6 +18,7 @@
 6. Use CommonJS example.  
 **bot.js**  
 
+
 ```javascript
 const { Client } = require("revolt.js");
 
