@@ -17,7 +17,7 @@
 5. Copy Token 
 6. Use CommonJS example.  
 **bot.js**
-```
+```javascript
 const { Client } = require("revolt.js");
 
 let client = new Client();
