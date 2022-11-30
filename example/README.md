@@ -1,3 +1,6 @@
+### Setup 
+1. Install [Node.js](https://nodejs.org/en/download/current/)
+2. Install `npm i revolt.js`
 ### Basic 
 1. Insert [Revolt Bot Token](https://app.revolt.chat/settings/bots) into [`./token.txt`](./token.txt)
 
