@@ -48,52 +48,52 @@ client.on("ready", async () => {
 		
 		let server_count_index = 0;
 		console.info("Joined Servers:");
-		console.info(`debuginfo:  ${client.servers.forEach(
-		async (values, keys, objects) => {
-			console.info(++server_count_index + " " + values._id + " " + values.name);
-			console.info("  Joined at: " + values.member.joined_at);
-			console.info("  Roles: " + values.member.roles);
-			console.info("  Nickname: " + values.member.nickname);
-			console.info("  Ranking: " + values.member.ranking);
-			console.info("  roleColour: " + values.member.roleColour);
-			console.info("  orderedRoles: " + values.member.orderedRoles);
-			console.info("  orderedRoles: " + typeof values.member.orderedRoles);
-			
-
-
-			await values.member.edit({
-				nickname: "Guild Bot V0.1"
+		client.servers.forEach(
+			async (values, keys, objects) => {
+				console.info(++server_count_index + " " + values._id + " " + values.name);
+				console.info("  Joined at: " + values.member.joined_at);
+				console.info("  Roles: " + values.member.roles);
+				console.info("  Nickname: " + values.member.nickname);
+				console.info("  Ranking: " + values.member.ranking);
+				console.info("  roleColour: " + values.member.roleColour);
+				console.info("  orderedRoles: " + values.member.orderedRoles);
+				console.info("  orderedRoles: " + typeof values.member.orderedRoles);
 				
-			});
-			
-			
-			
-			
-			/* 403  - Forbidden, the role is the same or higher than current one.*/
-			await values.member.edit({
-				roles: ["01GJWB0CYDB8BR2AZE7NTT5TYP", "01GJ5MY14DJB867D7158HYAKZD", "01GJ5Q8X6VNW4PDGR88NYJY1DR"]
-				
-			});
 
-			
-			
-			for (const [key, value] of Object.entries(values.member.orderedRoles)) {
-			  console.log(`    ${key}: ${value}`);
-				for (const [keyz, valuez] of Object.entries(value)) {
-					console.log(`      ${keyz}: ${valuez}`);
-					if (keyz == 1) {
-						console.log(`          Name: ${valuez.name}`);
-						console.log(`          Colour: ${valuez.colour}`);
-						console.log(`          Hoist: ${valuez.hoist}`);
-						console.log(`          Permissions: ${valuez.permissions}`);
-						console.log(`          Rank: ${valuez.rank}`);
+
+				await values.member.edit({
+					nickname: "Guild Bot V0.1"
+					
+				});
+				
+				
+				
+				
+				/* 403  - Forbidden, the role is the same or higher than current one.*/
+				await values.member.edit({
+					roles: ["01GJWB0CYDB8BR2AZE7NTT5TYP", "01GJ5MY14DJB867D7158HYAKZD", "01GJ5Q8X6VNW4PDGR88NYJY1DR"]
+					
+				});
+
+				
+				
+				for (const [key, value] of Object.entries(values.member.orderedRoles)) {
+				  console.log(`    ${key}: ${value}`);
+					for (const [keyz, valuez] of Object.entries(value)) {
+						console.log(`      ${keyz}: ${valuez}`);
+						if (keyz == 1) {
+							console.log(`          Name: ${valuez.name}`);
+							console.log(`          Colour: ${valuez.colour}`);
+							console.log(`          Hoist: ${valuez.hoist}`);
+							console.log(`          Permissions: ${valuez.permissions}`);
+							console.log(`          Rank: ${valuez.rank}`);
+						}
 					}
 				}
+				
 			}
 			
-		}
-		
-		)}!`);
+		);
 		
 		/* console.dir(client.servers.data_, { depth:1 }) */
 		/* console.dir(client.servers, { depth:1 }) */
