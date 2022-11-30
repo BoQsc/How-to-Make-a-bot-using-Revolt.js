@@ -6,11 +6,20 @@ console.info(`Welcome to a Basic Revolt Bot.`);
 console.info(`Revolt Library version: ${require("revolt.js").LIBRARY_VERSION}!`);
 console.info(`_______________________________`);
 
-client.on("packet", async (sss) => {
+client.on("packet", async (events) => {
+	/* console.info(`event happened ${events}`); */ 
 	
-	console.info(`event happened3 ${sss}`);
-	for (const [keyd, valued] of Object.entries(sss)) {
-		console.log(`    ${keyd}: ${valued}`);
+	for (const [keyd, valued] of Object.entries(events)) {
+		/* console.log(`    ${keyd}: ${valued}`); */
+		
+		if (valued == "MessageReact" || valued == "MessageUnreact"){
+
+			console.log(`type           ${events.type}`);
+			console.log(`id             ${events.id}`);
+			console.log(`channel_id     ${events.channel_id}`);
+			console.log(`user_id        ${events.user_id}`);
+			console.log(`emoji_id       ${events.emoji_id}`);
+		}
 	}
 })
 
