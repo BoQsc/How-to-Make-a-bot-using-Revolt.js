@@ -26,7 +26,10 @@ client.on("packet", async (event) => {
 	*/
 })
 
-
+client.on("member/join", async (eventt) => {
+	console.log(`${eventt.user.username} joined the server.`);	
+	}
+)
 
 client.on("ready", async () => {
 		console.info(`Bot Token: ${client.session}!`);
