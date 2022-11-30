@@ -16,7 +16,7 @@
 4. Add Bot
 5. Copy Token 
 6. Use CommonJS example.  
-**bot.js**
+**bot.js**  
 
 ```javascript
 const { Client } = require("revolt.js");
