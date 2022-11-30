@@ -118,7 +118,7 @@ client.on("message", async (message) => {
 		console.log(await message.channel.sendMessage("world"));
 	}
 	
-	if (message.content === "create reactions") {
+	if (message.content === "lets create reactions") {
 		newmsg = await message.channel.sendMessage("world");
 		newmsg.react("01GK50B414WGS9M82668EZWMSX");
 		newmsg.react("01GK50BBW5FP8PZSYTHYCJCG3W");
