@@ -20,12 +20,12 @@ nohup node "--experimental-specifier-resolution=node" "./bot.js" > /dev/null 2>&
 ```
 
 Stop the bot if needed.
-```
+```bash
 kill -9 `cat run.pid`
 ```
 
 Useful Linux Commands:
-```
+```bash
 ps
 killall node
 ```
