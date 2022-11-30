@@ -6,6 +6,16 @@ console.info(`Welcome to a Basic Revolt Bot.`);
 console.info(`Revolt Library version: ${require("revolt.js").LIBRARY_VERSION}!`);
 console.info(`_______________________________`);
 
+client.on("packet", async (sss) => {
+	
+	console.info(`event happened3 ${sss}`);
+	for (const [keyd, valued] of Object.entries(sss)) {
+		console.log(`    ${keyd}: ${valued}`);
+	}
+})
+
+
+
 client.on("ready", async () => {
 		console.info(`Bot Token: ${client.session}!`);
 		console.info(`User ID: ${client.user._id}!`);
