@@ -10,13 +10,13 @@ client.on("packet", async (event) => {
 	/* console.info(`event happened ${event}`); */ 
 	
 	if (event.type == "MessageReact" || event.type == "MessageUnreact"){
-
-		console.log(`type           ${event.type}`);
-		console.log(`message id     ${event.id}`);
-		console.log(`channel_id     ${event.channel_id}`);
-		console.log(`user_id        ${event.user_id}`);
-		console.log(`emoji_id       ${event.emoji_id}`);
-		
+		if (event.user_id != client.user._id){
+			console.log(`type           ${event.type}`);
+			console.log(`message id     ${event.id}`);
+			console.log(`channel_id     ${event.channel_id}`);
+			console.log(`user_id        ${event.user_id}`);
+			console.log(`emoji_id       ${event.emoji_id}`);
+		}
 	}
 	/* Display content of the packet event object.
 	for (const [keyd, valued] of Object.entries(event)) {
