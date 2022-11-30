@@ -16,6 +16,22 @@ client.on("packet", async (event) => {
 			console.log(`channel_id     ${event.channel_id}`);
 			console.log(`user_id        ${event.user_id}`);
 			console.log(`emoji_id       ${event.emoji_id}`);
+			
+			if (event.emoji_id == "01GK50B414WGS9M82668EZWMSX"){
+				console.log("Purple");
+			}
+			if (event.emoji_id == "01GK50BQA59VF31A04ERDTNPMG"){
+				console.log("Blue");
+			}
+			if (event.emoji_id == "01GK50BBW5FP8PZSYTHYCJCG3W"){
+				console.log("Red");
+			}
+			if (event.emoji_id == "01GK50BYNR1PY1G479KCBA2QPR"){
+				console.log("Green");
+			}
+			if (event.emoji_id == "01GK50BH980WRKX5ATEETZMWZK"){
+				console.log("Yellow");
+			}
 		}
 	}
 	/* Display content of the packet event object.
