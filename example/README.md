@@ -1,7 +1,7 @@
 ### Basic 
 Insert [Revolt Bot Token](https://app.revolt.chat/settings/bots) into [`./token.txt`](./token.txt)
 
-Start bot 
+Start **bot.js**  
 ```
 node --experimental-specifier-resolution=node bot.js
 ```
