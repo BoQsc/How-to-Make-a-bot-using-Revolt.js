@@ -5,7 +5,7 @@
 1. Insert [Revolt Bot Token](https://app.revolt.chat/settings/bots) into [`./token.txt`](./token.txt)
 
 2. Start **bot.js**  
-```
+```bash
 node --experimental-specifier-resolution=node bot.js
 ```
 
@@ -15,7 +15,7 @@ Use `CTRL + C` to close bot.
 ### Additional
 
 Make the bot stay after disconnecting from Linux Machine:
-```
+```bash
 nohup node --experimental-specifier-resolution=node bot.js > /dev/null 2>&1 & echo $! > run.pid
 ```
 
