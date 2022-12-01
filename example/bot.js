@@ -86,7 +86,7 @@ client.on("packet", async (event) => {
 								});
 								
 								await memberz.edit({
-									roles: [""]
+									roles: []
 								});
 							}
 							
