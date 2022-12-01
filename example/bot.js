@@ -172,7 +172,7 @@ client.on("message", async (message) => {
 	}
 	
 	if (message.content === "lets create reactions") {
-		newmsg = await message.channel.sendMessage("world");
+		newmsg = await message.channel.sendMessage("Select roles: ");
 		await newmsg.react("01GK50B414WGS9M82668EZWMSX");
 		await newmsg.react("01GK50BBW5FP8PZSYTHYCJCG3W");
 		await newmsg.react("01GK50BH980WRKX5ATEETZMWZK");
