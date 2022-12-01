@@ -13,7 +13,7 @@ client.on("packet", async (event) => {
 		if (event.user_id != client.user._id){
 			console.log(`type           ${event.type}`);
 			console.log(`message id     ${event.id}`);
-			console.log(`channel_id     ${event.channel_id}`);
+			console.log(`channel_id     ${event.channel_id}`); // Channel id is actually a server's id
 			console.log(`user_id        ${event.user_id}`);
 			console.log(`emoji_id       ${event.emoji_id}`);
 			
@@ -30,16 +30,33 @@ client.on("packet", async (event) => {
 				console.info(`event happened ${event}`);
 				// TODO: Use message id or channel id to find the server and assign role to the user.
 				for (const [keyd, valued] of Object.entries(await client.user)) {
-					 console.log(`    ${keyd}: ${valued}`); 
+					console.log(`    ${keyd}: ${valued}`); 
 				}
 
-					 console.log(`  test  ${client.user.username}`); 
-					 console.dir(client, { depth:1 })
-					 console.log(newmsg); 
-					 console.log(newmsg.author.username); 
-					 await newmsg.react("01GJ86KCHS9YG7BQ8YDNJN9HQB");
+					console.log(`  test  ${client.user.username}`); 
+					// console.dir(client, { depth:1 })
+					// console.log(newmsg); 
+					// console.log(newmsg.author.username); 
+					console.log(` Channels ${client.channels}`);
+					
+					client.servers.forEach(async (values, keys, objects) => {
+						console.log(` Channels ${values}`);
+						
+						
+						
+						// Channel id is actually a server's id
+					for (const [keyd, valued] of Object.entries(values)) {
+						 console.log(`    ${keyd}: ${valued}`); 
+					}
+						
+					})
+					
+					
 
-					 // check if message ids match and fetch the userid and assign the role.
+					
+					// await newmsg.react("01GJ86KCHS9YG7BQ8YDNJN9HQB");
+					
+					// check if message ids match and fetch the userid and assign the role.
 
 				// await event.edit({
 				// 	roles: ["01GK52Z15W78JM1WQ1NK7MMZCW"]
@@ -162,16 +179,16 @@ client.on("message", async (message) => {
 		await newmsg.react("01GK50BQA59VF31A04ERDTNPMG");
 		await newmsg.react("01GK50BYNR1PY1G479KCBA2QPR");
 		
-		// const fs = require('fs')
-		// const data = await JSON.stringify(newmsg)
-		// 
-		// // write JSON string to a file
-		// fs.writeFile('msg.json', data, err => {
-		//   if (err) {
-		// 	throw err
-		//   }
-		//   console.log('JSON data is saved.')
-		// })		
+		const fs = require('fs')
+		const data = await JSON.stringify(newmsg)
+
+		// write JSON string to a file
+		fs.writeFile('msg.json', data, err => {
+		  if (err) {
+			throw err
+		  }
+		  console.log('JSON data is saved.')
+		})		
 		
 		
 
