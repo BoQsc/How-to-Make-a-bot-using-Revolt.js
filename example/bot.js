@@ -48,6 +48,20 @@ client.on("packet", async (event) => {
 							console.log(` HERE2  ${values.owner}`);
 							console.log(` HERE2  ${values._id}`);
 							console.log(client.servers.get(values._id).name);
+							serverz = client.servers.get(values._id)
+							memberz = await serverz.fetchMember(event.user_id);
+							
+							console.log(serverz.name);
+							console.log(serverz.name);
+							console.log(memberz.joined_at);
+							console.log(memberz.user.username);
+							
+							// console.log(await client.servers.get(values._id).fetchMember(event.user_id));
+							// console.log(await client.servers.get(values._id).fetchMember(event.user_id).nickname);
+							// console.log(await client.servers.get(values._id).fetchMember(event.user_id).joined_at);
+							// console.log(await client.servers.get(values._id).fetchMember(event.user_id).roles);
+							// console.log(await client.servers.get(values._id).fetchMember(event.user_id).user.username);
+
 							
 							
 								// Channel id is actually a server's id and Guild ID
