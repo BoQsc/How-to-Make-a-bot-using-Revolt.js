@@ -47,22 +47,36 @@ client.on("packet", async (event) => {
 							console.log(` HERE2  ${values.name}`);
 							console.log(` HERE2  ${values.owner}`);
 							console.log(` HERE2  ${values._id}`);
-							console.log(client.servers.get(values._id).name);
-							serverz = client.servers.get(values._id)
+							//console.log(client.servers.get(values._id).name);
+							serverz = await client.servers.get(values._id)
 							memberz = await serverz.fetchMember(event.user_id);
 							
 							console.log(serverz.name);
 							console.log(memberz.joined_at);
 							console.log(memberz.user.username);
 							console.log(memberz.roles);
+							if (event.type == "MessageReact" ){
+								console.log("react");
+								await memberz.edit({
+									nickname: "Guild Bot V0.3"
+								});
+								
+								await memberz.edit({
+									roles: ["01GK52Z15W78JM1WQ1NK7MMZCW"]
+								});
+							}
 							
-							await memberz.edit({
-								nickname: "Guild Bot V0.3"
-							});
+							if (event.type == "MessageUnreact" ){
+								console.log("unreact");
+								await memberz.edit({
+									nickname: "test"
+								});
+								
+								await memberz.edit({
+									roles: [""]
+								});
+							}
 							
-							await memberz.edit({
-								roles: ["01GK52Z15W78JM1WQ1NK7MMZCW"]
-							});
 							
 							// console.log(await client.servers.get(values._id).fetchMember(event.user_id));
 							// console.log(await client.servers.get(values._id).fetchMember(event.user_id).nickname);
