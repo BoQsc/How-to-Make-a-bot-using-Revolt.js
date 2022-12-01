@@ -17,6 +17,8 @@ client.on("packet", async (event) => {
 			console.log(`user_id        ${event.user_id}`);
 			console.log(`emoji_id       ${event.emoji_id}`);
 			
+			
+			
 			if (event.emoji_id == "01GK50B414WGS9M82668EZWMSX"){
 				console.log("Purple");
 			}
@@ -25,6 +27,21 @@ client.on("packet", async (event) => {
 			}
 			if (event.emoji_id == "01GK50BBW5FP8PZSYTHYCJCG3W"){
 				console.log("Red");
+				console.info(`event happened ${event}`);
+				// TODO: Use message id or channel id to find the server and assign role to the user.
+				for (const [keyd, valued] of Object.entries(await client.user)) {
+					 console.log(`    ${keyd}: ${valued}`); 
+				}
+
+					 console.log(`  test  ${client.user.username}`); 
+					 console.dir(client, { depth:1 })
+					 console.log(newmsg); 
+					 // check if message ids match and fetch the userid and assign the role.
+
+				// await event.edit({
+				// 	roles: ["01GK52Z15W78JM1WQ1NK7MMZCW"]
+				// });
+				
 			}
 			if (event.emoji_id == "01GK50BYNR1PY1G479KCBA2QPR"){
 				console.log("Green");
