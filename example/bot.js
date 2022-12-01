@@ -55,6 +55,17 @@ client.on("packet", async (event) => {
 							console.log(memberz.joined_at);
 							console.log(memberz.user.username);
 							console.log(memberz.roles);
+							
+							newroles = memberz.roles;
+							if (!memberz.roles.includes("01GK52Z15W78JM1WQ1NK7MMZCW")){
+								console.log(`Adding a role.`)
+								newroles.push("01GK52Z15W78JM1WQ1NK7MMZCW");
+							} else {
+							
+								console.log(`Role already assigned.`);
+							}
+							
+							console.log(` New roles: ${newroles}`);
 							const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
 							await sleep(2500); // sleep for 5 seconds
 							if (event.type == "MessageReact" ){
@@ -71,7 +82,7 @@ client.on("packet", async (event) => {
 							if (event.type == "MessageUnreact" ){
 								console.log("unreact");
 								await memberz.edit({
-									nickname: "test"
+									nickname: memberz.user.username
 								});
 								
 								await memberz.edit({
