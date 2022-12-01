@@ -72,6 +72,8 @@ client.on("packet", async (event) => {
 							if (event.type == "MessageReact" ){
 								console.log("react");
 								console.log(
+								
+								// Double edit if await returns nothing
 								await memberz.edit({
 									nickname: "Guild Bot V0.3",
 									roles: ["01GK52Z15W78JM1WQ1NK7MMZCW"]
@@ -79,10 +81,12 @@ client.on("packet", async (event) => {
 								);
 							
 							}
-							
+
 							if (event.type == "MessageUnreact" ){
 								console.log("unreact");
 								console.log(
+								
+								// Double edit if await returns nothing
 								await memberz.edit({
 									nickname: null,
 									roles: []
