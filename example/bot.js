@@ -71,19 +71,23 @@ client.on("packet", async (event) => {
 							// await sleep(2500); // sleep for 5 seconds
 							if (event.type == "MessageReact" ){
 								console.log("react");
+								console.log(
 								await memberz.edit({
 									nickname: "Guild Bot V0.3",
 									roles: ["01GK52Z15W78JM1WQ1NK7MMZCW"]
-								});
+								})
+								);
 							
 							}
 							
 							if (event.type == "MessageUnreact" ){
 								console.log("unreact");
+								console.log(
 								await memberz.edit({
 									nickname: null,
 									roles: []
-								});
+								})
+								);
 								
 							}
 							
