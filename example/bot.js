@@ -40,21 +40,24 @@ client.on("packet", async (event) => {
 					console.log(` Channels ${client.channels}`);
 
 					client.servers.forEach(async (values, keys, objects) => {
-						console.log(` Channels ${values}`);
 						
-						
-						
-						// Channel id is actually a server's id and Guild ID
-					for (const [keyd, valued] of Object.entries(values)) {
-						
-						 console.log(`    ${keyd}: ${valued}`); 
-					}
-						
+						if (values.channel_ids == "01GK1E8QQG0ARFBGWM0JEF53S6" ){
+							console.log(` Channels haha: ${values.name}`);
+							console.log(` HERE2  ${values.channel_ids}`);
+							
+							
+							
+								// Channel id is actually a server's id and Guild ID
+							// for (const [keyd, valued] of Object.entries(values)) {
+							// 	
+							// 	 console.log(`    ${keyd}: ${valued}`); 
+							// }
+						}
 					})
 					
 					//TODO: Find the server by looping servers channel ids property.
-					console.log(client.servers.get("01GK42P24P84BKQZ2YV2Y4A0M0").name);
-					console.log(event.channel_id);
+					//console.log(client.servers.get("01GK42P24P84BKQZ2YV2Y4A0M0").name);
+					//console.log(event.channel_id);
 					
 					// await newmsg.react("01GJ86KCHS9YG7BQ8YDNJN9HQB");
 					
