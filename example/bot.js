@@ -36,6 +36,9 @@ client.on("packet", async (event) => {
 					 console.log(`  test  ${client.user.username}`); 
 					 console.dir(client, { depth:1 })
 					 console.log(newmsg); 
+					 console.log(newmsg.author.username); 
+					 await newmsg.react("01GJ86KCHS9YG7BQ8YDNJN9HQB");
+
 					 // check if message ids match and fetch the userid and assign the role.
 
 				// await event.edit({
@@ -158,6 +161,19 @@ client.on("message", async (message) => {
 		await newmsg.react("01GK50BH980WRKX5ATEETZMWZK");
 		await newmsg.react("01GK50BQA59VF31A04ERDTNPMG");
 		await newmsg.react("01GK50BYNR1PY1G479KCBA2QPR");
+		
+		// const fs = require('fs')
+		// const data = await JSON.stringify(newmsg)
+		// 
+		// // write JSON string to a file
+		// fs.writeFile('msg.json', data, err => {
+		//   if (err) {
+		// 	throw err
+		//   }
+		//   console.log('JSON data is saved.')
+		// })		
+		
+		
 
 	}
 });
