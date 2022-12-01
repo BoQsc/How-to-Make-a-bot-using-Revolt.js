@@ -52,9 +52,9 @@ client.on("packet", async (event) => {
 							memberz = await serverz.fetchMember(event.user_id);
 							
 							console.log(serverz.name);
-							console.log(serverz.name);
 							console.log(memberz.joined_at);
 							console.log(memberz.user.username);
+							console.log(memberz.roles);
 							
 							// console.log(await client.servers.get(values._id).fetchMember(event.user_id));
 							// console.log(await client.servers.get(values._id).fetchMember(event.user_id).nickname);
