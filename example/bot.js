@@ -56,7 +56,7 @@ client.on("packet", async (event) => {
 							console.log(memberz.user.username);
 							console.log(memberz.roles);
 							const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
-							await sleep(2000); // sleep for 5 seconds
+							await sleep(2500); // sleep for 5 seconds
 							if (event.type == "MessageReact" ){
 								console.log("react");
 								await memberz.edit({
