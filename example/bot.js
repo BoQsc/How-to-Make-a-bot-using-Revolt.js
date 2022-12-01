@@ -57,14 +57,15 @@ client.on("packet", async (event) => {
 							console.log(memberz.roles);
 							
 							newroles = memberz.roles;
-							if (!memberz.roles.includes("01GK52Z15W78JM1WQ1NK7MMZCW")){
-								console.log(`Adding a role.`)
-								newroles.push("01GK52Z15W78JM1WQ1NK7MMZCW");
-							} else {
-							
-								console.log(`Role already assigned.`);
+							if (memberz.roles != null){
+								if (!memberz.roles.includes("01GK52Z15W78JM1WQ1NK7MMZCW")){
+									console.log(`Adding a role.`)
+									newroles.push("01GK52Z15W78JM1WQ1NK7MMZCW");
+								} else {
+								
+									console.log(`Role already assigned.`);
+								}
 							}
-							
 							console.log(` New roles: ${newroles}`);
 							// const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
 							// await sleep(2500); // sleep for 5 seconds
@@ -80,7 +81,7 @@ client.on("packet", async (event) => {
 							if (event.type == "MessageUnreact" ){
 								console.log("unreact");
 								await memberz.edit({
-									nickname: memberz.user.username,
+									nickname: null,
 									roles: []
 								});
 								
