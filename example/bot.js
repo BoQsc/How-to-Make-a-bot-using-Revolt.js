@@ -41,10 +41,13 @@ client.on("packet", async (event) => {
 
 					client.servers.forEach(async (values, keys, objects) => {
 						
-						if (values.channel_ids == "01GK1E8QQG0ARFBGWM0JEF53S6" ){
+						if (values.channel_ids.includes(event.channel_id) ){
 							console.log(` Channels haha: ${values.name}`);
 							console.log(` HERE2  ${values.channel_ids}`);
-							
+							console.log(` HERE2  ${values.name}`);
+							console.log(` HERE2  ${values.owner}`);
+							console.log(` HERE2  ${values._id}`);
+							console.log(client.servers.get(values._id).name);
 							
 							
 								// Channel id is actually a server's id and Guild ID
