@@ -56,6 +56,14 @@ client.on("packet", async (event) => {
 							console.log(memberz.user.username);
 							console.log(memberz.roles);
 							
+							await memberz.edit({
+								nickname: "Guild Bot V0.3"
+							});
+							
+							await memberz.edit({
+								roles: ["01GK52Z15W78JM1WQ1NK7MMZCW"]
+							});
+							
 							// console.log(await client.servers.get(values._id).fetchMember(event.user_id));
 							// console.log(await client.servers.get(values._id).fetchMember(event.user_id).nickname);
 							// console.log(await client.servers.get(values._id).fetchMember(event.user_id).joined_at);
