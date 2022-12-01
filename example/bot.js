@@ -66,28 +66,24 @@ client.on("packet", async (event) => {
 							}
 							
 							console.log(` New roles: ${newroles}`);
-							const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
-							await sleep(2500); // sleep for 5 seconds
+							// const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitTimeInMs));
+							// await sleep(2500); // sleep for 5 seconds
 							if (event.type == "MessageReact" ){
 								console.log("react");
 								await memberz.edit({
-									nickname: "Guild Bot V0.3"
-								});
-								
-								await memberz.edit({
+									nickname: "Guild Bot V0.3",
 									roles: ["01GK52Z15W78JM1WQ1NK7MMZCW"]
 								});
+							
 							}
 							
 							if (event.type == "MessageUnreact" ){
 								console.log("unreact");
 								await memberz.edit({
-									nickname: memberz.user.username
-								});
-								
-								await memberz.edit({
+									nickname: memberz.user.username,
 									roles: []
 								});
+								
 							}
 							
 							
