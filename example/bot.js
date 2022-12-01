@@ -13,7 +13,7 @@ client.on("packet", async (event) => {
 		if (event.user_id != client.user._id){
 			console.log(`type           ${event.type}`);
 			console.log(`message id     ${event.id}`);
-			console.log(`channel_id     ${event.channel_id}`); // Channel id is actually a server's id
+			console.log(`channel_id     ${event.channel_id}`); // Channel id is actually a server's id and Guild ID
 			console.log(`user_id        ${event.user_id}`);
 			console.log(`emoji_id       ${event.emoji_id}`);
 			
@@ -44,7 +44,7 @@ client.on("packet", async (event) => {
 						
 						
 						
-						// Channel id is actually a server's id
+						// Channel id is actually a server's id and Guild ID
 					for (const [keyd, valued] of Object.entries(values)) {
 						 console.log(`    ${keyd}: ${valued}`); 
 					}
