@@ -136,3 +136,6 @@ https://github.com/revoltchat/revolt.js
 Revolt Katex Example
 https://developers.revolt.chat/markdown#katex
 $\color{red}\textsf{Red Text}$
+
+Revolt revolt.js API Reference
+https://revolt.js.org/index.html
