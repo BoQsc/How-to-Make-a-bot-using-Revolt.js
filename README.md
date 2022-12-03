@@ -66,7 +66,7 @@ client.loginBot("..");
     Change profile picture and Description.  
 ![image](https://user-images.githubusercontent.com/21064622/204127696-9b59e728-abce-4794-a192-541ef21b79f8.png)
 
----
+# Advanced
 
 11. Enabling TypeScript   
     *This part of article is incomplete and needs help.*  
