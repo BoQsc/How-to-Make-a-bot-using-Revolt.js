@@ -106,3 +106,33 @@ Useful Linux Commands:
 ps
 killall node
 ```
+
+# General Information
+
+Revolt Web Client Production Source Code Repository
+https://github.com/revoltchat/revite/tree/production
+
+Revolt Windows Client releases
+https://github.com/revoltchat/desktop/releases
+
+Revolt API Changes
+https://developers.revolt.chat/changes/
+
+Revolt Experimental Plugin API
+https://developers.revolt.chat/plugin-api
+
+Revolt Markdown Reference
+https://developers.revolt.chat/markdown
+
+Revolt Architecture Map
+https://developers.revolt.chat/stack/
+
+Revolt Bot programming Introduction
+https://developers.revolt.chat/stack/revolt.js/guide/discord_js_migration
+
+Revolt Bot programming basics
+https://github.com/revoltchat/revolt.js
+
+Revolt Katex Example
+https://developers.revolt.chat/markdown#katex
+$\color{red}\textsf{Red Text}$
