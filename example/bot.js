@@ -53,7 +53,7 @@ client.on("ready", async () => {
 
 
 				await values.member.edit({
-					nickname: "Guild Bot V0.2"
+					nickname: "Guild Bot V0.2🔮"
 					
 				});
 				
