@@ -15,3 +15,6 @@ What it does:
 7. After entering Bot Token:
    1. Launches Revolt Bot with Bot Token, without saving the bot token for future.
    2. To save Bot Token Permanently: close bot with CTRL + C and reinsert Bot Token into `./Bot_Token.txt`
+
+Next time:
+You can run the bot by simply typing `node bot.js`
