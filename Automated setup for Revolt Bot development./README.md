@@ -11,5 +11,7 @@ What it does:
 3. Reinstalls NPM and makes it ready to download new packages.
 4. Installs `revolt.js` for NodeJS using NPM
 5. Downloads Revolt Bot Example. (`bot.js` of this repository)
-6. Asks to insert Bot Token AND opens a Browser Window of 
-7. 
+6. Asks to insert Bot Token AND opens a Web Browser with URL https://app.revolt.chat/settings/bots
+7. After entering Bot Token:
+   1. Launches Revolt Bot with Bot Token, without saving the bot token for future.
+   2. To save Bot Token Permanently: close bot with CTRL + C and reinsert Bot Token into `./Bot_Token.txt`
