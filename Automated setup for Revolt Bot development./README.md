@@ -20,6 +20,7 @@ What it does:
 7. After entering Bot Token:
    1. Launches Revolt Bot with Bot Token, without saving the bot token for future.
    2. To save Bot Token Permanently: close bot with CTRL + C and reinsert Bot Token into `./Bot_Token.txt`
+8. Opens a Browser Window to invite the bot to any of you existing Guilds.
 
 Next time:
 You can run the bot by simply typing `node bot.js`
