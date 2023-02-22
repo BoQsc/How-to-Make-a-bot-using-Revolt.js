@@ -40,6 +40,8 @@ ECHO 9. Downloading Revolt.js bot example.
 curl "https://raw.githubusercontent.com/BoQsc/How-to-Make-a-bot-using-Revolt.js/main/Automated%%20setup%%20for%%20Revolt%%20Bot%%20development./bot.js" -O
 
 ECHO 10. Please insert Bot Token:
+ECHO A Browser Window to browse your bots will be opened.
+TIMEOUT /T 10
 explorer "https://app.revolt.chat/settings/bots"
 SET /p "bot_token=Enter Bot Token: "
 
