@@ -37,7 +37,7 @@ ECHO 8. NodeJS NPM: Install revolt.js
 CALL .\npm i revolt.js
 
 ECHO 9. Downloading Revolt.js bot example.
-curl "https://raw.githubusercontent.com/BoQsc/How-to-Make-a-bot-using-Revolt.js/main/Automated%20setup%20for%20Revolt%20Bot%20development./bot.js" -O
+curl "https://raw.githubusercontent.com/BoQsc/How-to-Make-a-bot-using-Revolt.js/main/Automated%%20setup%%20for%%20Revolt%%20Bot%%20development./bot.js" -O
 
 ECHO 10. Please insert Bot Token:
 explorer "https://app.revolt.chat/settings/bots"
