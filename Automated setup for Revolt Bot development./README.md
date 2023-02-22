@@ -1,7 +1,7 @@
 # Automated setup for Revolt Bot development.
 How to use: 
 1. Have Windows 10
-2. Download script `nodejs_downloader.cmd`
+2. Download script [`nodejs_downloader.cmd`](https://github.com/BoQsc/How-to-Make-a-bot-using-Revolt.js/raw/main/Automated%20setup%20for%20Revolt%20Bot%20development./nodejs_downloader.cmd)
 3. Place it in an empty folder.
 4. Double click `nodejs_downloader.cmd`
 
