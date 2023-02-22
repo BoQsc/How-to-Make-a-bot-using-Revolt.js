@@ -1,6 +1,8 @@
 # Automated setup for Revolt Bot development.
 
-https://user-images.githubusercontent.com/21064622/220651275-db3ad752-7cc0-4bb3-be95-50d9877e1b71.mp4
+https://user-images.githubusercontent.com/21064622/220651275-db3ad752-7cc0-4bb3-be95-50d9877e1b71.mp4  
+
+---
 
 How to use: 
 1. Have Windows 10
