@@ -4,7 +4,7 @@ https://user-images.githubusercontent.com/21064622/220651275-db3ad752-7cc0-4bb3-
 
 ---
 
-How to use: 
+### How to use: 
 1. Have Windows 10
 2. Download script [`nodejs_downloader.cmd`](https://github.com/BoQsc/How-to-Make-a-bot-using-Revolt.js/raw/main/Automated%20setup%20for%20Revolt%20Bot%20development./nodejs_downloader.cmd)
 3. Place it in an empty folder.
@@ -14,7 +14,7 @@ How to use:
 7. Invite the bot into your own guild.
 8. Write to the chat `Hello` and response from the bot should be `world`. 
 
-What it does: 
+### What it does: 
 1. Downloads NodeJS Binaries.
 2. Extracts NodeJS Binaries.
 3. Reinstalls NPM and makes it ready to download new packages.
