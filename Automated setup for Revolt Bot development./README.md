@@ -9,6 +9,10 @@ How to use:
 2. Download script [`nodejs_downloader.cmd`](https://github.com/BoQsc/How-to-Make-a-bot-using-Revolt.js/raw/main/Automated%20setup%20for%20Revolt%20Bot%20development./nodejs_downloader.cmd)
 3. Place it in an empty folder.
 4. Double click `nodejs_downloader.cmd`
+5. Wait until request for bot token.
+6. Create a new bot and insert bot token.
+7. Invite the bot into your own guild.
+8. Write to the chat `Hello` and response from the bot should be `world`. 
 
 What it does: 
 1. Downloads NodeJS Binaries.
